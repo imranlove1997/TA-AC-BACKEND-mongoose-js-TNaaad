@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var app = express();
 
 mongoose.connect("mongodb:localhost/code", (err) => {
-    console.log(err ? err : ('Connected...💻'));
+    console.log(err ? err : ('Connected...'));
 })
 
 app.get('/', (req, res) => {
